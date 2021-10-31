@@ -11,7 +11,7 @@ import { error } from '@pnotify/core';
 
 const refs = getRefs();
 
-refs.searchInput.addEventListener("input", _.debounce(onInputChange, 1000));
+refs.searchInput.addEventListener("input", _.debounce(onInputChange, 500));
 
 function onInputChange(evt) {
     evt.preventDefault();
